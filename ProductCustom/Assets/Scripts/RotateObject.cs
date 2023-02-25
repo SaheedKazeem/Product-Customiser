@@ -1,30 +1,43 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RotateObject : MonoBehaviour
 {
-    public GameObject button;
-    public float rotationSpeed = 50f;
+    public float rotationSpeed = 10f;
 
-    private bool isButtonPressed = false;
+    private bool isRotating = false;
+    private int rotationDirection = 1; // 1 for clockwise, -1 for counterclockwise
+
+    public void StartRotatingForward()
+    {
+        // Start rotating in a forward direction (clockwise)
+        isRotating = true;
+        rotationDirection = 1;
+    }
+
+    public void StartRotatingBackward()
+    {
+        // Start rotating in a backward direction (counterclockwise)
+        isRotating = true;
+        rotationDirection = -1;
+    }
+
+    public void StopRotating()
+    {
+        // Stop rotating
+        isRotating = false;
+    }
 
     void Update()
     {
-        if (button != null)
+        // Check if we should rotate
+        if (isRotating)
         {
-            if (Input.GetMouseButtonDown(0) && button == EventSystem.current.currentSelectedGameObject)
-            {
-                isButtonPressed = true;
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-                isButtonPressed = false;
-            }
-        }
+            // Calculate the amount to rotate based on the time since the last frame
+            float rotationAmount = rotationSpeed * rotationDirection * Time.deltaTime;
 
-        if (isButtonPressed)
-        {
-            transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+            // Rotate the object on the z-axis
+            transform.Rotate(0f, 0f, rotationAmount);
         }
     }
 }
