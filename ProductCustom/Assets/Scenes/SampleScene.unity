@@ -1239,6 +1239,51 @@ RectTransform:
   m_GameObject: {fileID: 479894671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.00013263}
+<<<<<<< HEAD
+=======
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 514960904}
+  - {fileID: 841446006}
+  - {fileID: 1593234187}
+  m_Father: {fileID: 574410008}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -342, y: -14}
+  m_SizeDelta: {x: 50.182983, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &514960903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514960904}
+  - component: {fileID: 514960907}
+  - component: {fileID: 514960906}
+  - component: {fileID: 514960905}
+  m_Layer: 5
+  m_Name: Button (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &514960904
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514960903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 84a1f03 (Colours of materials fixed)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1516,8 +1561,11 @@ GameObject:
   - component: {fileID: 694448396}
   - component: {fileID: 694448395}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 694448397}
   - component: {fileID: 694448398}
+=======
+>>>>>>> parent of 84a1f03 (Colours of materials fixed)
 =======
 >>>>>>> parent of 84a1f03 (Colours of materials fixed)
   m_Layer: 5
@@ -1645,6 +1693,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 694448393}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &694448397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1679,6 +1728,8 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+=======
+>>>>>>> parent of 84a1f03 (Colours of materials fixed)
 =======
 >>>>>>> parent of 84a1f03 (Colours of materials fixed)
 --- !u!1 &705507993
@@ -2498,6 +2549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 454, y: -59}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2771,6 +2823,11 @@ RectTransform:
   m_SizeDelta: {x: 50.182983, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 =======
+>>>>>>> parent of 84a1f03 (Colours of materials fixed)
+=======
+  m_AnchoredPosition: {x: -342, y: 65}
+  m_SizeDelta: {x: 50.182983, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 >>>>>>> parent of 84a1f03 (Colours of materials fixed)
 --- !u!1 &1248100325
 GameObject:
