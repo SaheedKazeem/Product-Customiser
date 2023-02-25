@@ -2,40 +2,32 @@ using UnityEngine;
 
 public class ChangeMaterialColour : MonoBehaviour
 {
-    public Color[] colors;
-    public int materialSlot = 0;
+    public Material material;
+    public Color[] colors = new Color[] { Color.red, Color.green, Color.blue };
+    private int currentIndex = 0;
 
-    private int currentColorIndex = 0;
-
-    private void Start()
+    void Start()
     {
-        SetMaterialColor(currentColorIndex);
-    }
-
-    private void SetMaterialColor(int index)
-    {
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-    if (meshRenderer != null && index >= 0 && index < colors.Length)
-    {
-        Material[] materials = meshRenderer.materials;
-        materials[materialSlot].SetColor("_BaseColor", colors[index]);
-        meshRenderer.materials = materials;
-    }
+        material.color = colors[currentIndex];
     }
 
     public void NextColor()
     {
-        currentColorIndex = (currentColorIndex + 1) % colors.Length;
-        SetMaterialColor(currentColorIndex);
+        currentIndex++;
+        if (currentIndex >= colors.Length)
+        {
+            currentIndex = 0;
+        }
+        material.color = colors[currentIndex];
     }
 
-    public void PrevColor()
+    public void PreviousColor()
     {
-        currentColorIndex--;
-        if (currentColorIndex < 0)
+        currentIndex--;
+        if (currentIndex < 0)
         {
-            currentColorIndex = colors.Length - 1;
+            currentIndex = colors.Length - 1;
         }
-        SetMaterialColor(currentColorIndex);
+        material.color = colors[currentIndex];
     }
 }
